@@ -1,4 +1,4 @@
-# Proof of Concept: RDP Monitoring with Microsoft Sentinel and Micrososft Defender
+<img width="1200" height="440" alt="azure-soc-architecture (1)" src="https://github.com/user-attachments/assets/70913abb-6232-4e61-8d82-dd193d10ac18" /># Proof of Concept: RDP Monitoring with Microsoft Sentinel and Micrososft Defender
 
 ## 1. Objective
 
@@ -17,6 +17,38 @@ Observation period and time zone: 12/10/2026 20:00 - 12/10/2026 22:00
 ## 3. Architecture
 
 Windows security events are collected by the Azure Monitor Agent according to the Data Collection Rule and sent to Log Analytics. Microsoft Sentinel queries these logs to detect relevant RDP sign-ins.
+
+![<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440">
+<rect width="1200" height="440" fill="white"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#2563eb" stroke-width="1.5"/></marker></defs>
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+<text x="600" y="55" font-size="28" font-weight="700" fill="#172554">Azure SOC Lab</text>
+<text x="600" y="85" font-size="16" fill="#475569">Windows event collection and scheduled detection</text>
+<rect x="90" y="115" width="270" height="60" rx="10" fill="#fff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="225" y="142" font-size="17" font-weight="600" fill="#334155">Data Collection Rule</text>
+<text x="225" y="163" font-size="14" fill="#64748b">Configures event collection</text>
+<path d="M225 175 V219" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+<g fill="#f8fbff" stroke="#2563eb" stroke-width="2">
+<rect x="70" y="225" width="310" height="120" rx="12"/>
+<rect x="450" y="225" width="300" height="120" rx="12"/>
+<rect x="820" y="225" width="310" height="120" rx="12"/>
+</g>
+<g fill="#172554" font-size="21" font-weight="700">
+<text x="225" y="260">Windows VM</text>
+<text x="600" y="270">Log Analytics</text>
+<text x="975" y="260">Microsoft Sentinel</text>
+</g>
+<g fill="#475569" font-size="16">
+<text x="225" y="288">Windows security events</text>
+<text x="225" y="314">Azure Monitor Agent</text>
+<text x="600" y="299">SecurityEvent table</text>
+<text x="975" y="288">KQL rule · Every 5 minutes</text>
+<text x="975" y="314">Alerts and incidents</text>
+</g>
+<path d="M380 285 H440 M750 285 H810" fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="600" y="392" font-size="14" fill="#64748b">Sentinel queries events stored in the Log Analytics workspace.</text>
+</g></svg>
+Uploading azure-soc-architecture (1).svg…]()
 
 ## 4. Implementation
 
