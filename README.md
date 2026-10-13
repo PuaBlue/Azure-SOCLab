@@ -54,7 +54,7 @@ Query frequency: 5 minutes
 Query lookback period: 5 minutes
 Alert threshold: 0
 
-<img width="1411" height="857" alt="image" src="https://github.com/user-attachments/assets/208cee64-09ca-4eb4-a444-2692ec299089" />
+<img width="508" height="599" alt="image" src="https://github.com/user-attachments/assets/23eb555c-7f24-4096-b464-79e2ee5b6681" />
 
 **KQL query**
 
