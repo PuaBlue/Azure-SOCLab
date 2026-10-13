@@ -1,4 +1,4 @@
-<img width="1200" height="440" alt="azure-soc-architecture (1)" src="https://github.com/user-attachments/assets/70913abb-6232-4e61-8d82-dd193d10ac18" /># Proof of Concept: RDP Monitoring with Microsoft Sentinel and Micrososft Defender
+# Proof of Concept: RDP Monitoring with Microsoft Sentinel and Micrososft Defender
 
 ## 1. Objective
 
@@ -91,7 +91,9 @@ False Positive - Not Malicious activity
 Tutorial-based work:
 Azure Virtual Machine deploy and conection to foward the logs to Sentinel
 
-Key lessons:
+
+### Key lessons: 
+
 I learned and played with different configurations of the rule, learning how to reduce unnecesary alert noise and how to include automations if it's required
 
 ## 10. Cleanup and Next Steps
@@ -101,7 +103,7 @@ Cleanup completed: Public RDP Access was restricted and the resources were remov
 Planned improvements:
 Adding Threat Intelligence sources to enrich the alerts, as well including more virtual machines and experiment with diferent data connectors.
 
-##Reference
+## Reference
 
 Base tutorial: https://www.youtube.com/watch?v=IJUkGuirTGQ
 
